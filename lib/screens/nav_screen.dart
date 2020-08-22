@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_netflix_responsive_ui/cubits/cubits.dart';
 import 'package:flutter_netflix_responsive_ui/screens/screens.dart';
+import 'package:flutter_netflix_responsive_ui/widgets/widgets.dart';
 
 class NavScreen extends StatefulWidget {
   @override
@@ -34,25 +35,27 @@ class _NavScreenState extends State<NavScreen> {
         create: (_) => AppBarCubit(),
         child: _screens[_currentIndex],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        backgroundColor: Colors.black,
-        items: _icons
-            .map((title, icon) => MapEntry(
-                title,
-                BottomNavigationBarItem(
-                  icon: Icon(icon, size: 30.0),
-                  title: Text(title),
-                )))
-            .values
-            .toList(),
-        currentIndex: _currentIndex,
-        selectedItemColor: Colors.white,
-        selectedFontSize: 11.0,
-        unselectedItemColor: Colors.grey,
-        unselectedFontSize: 11.0,
-        onTap: (index) => setState(() => _currentIndex = index),
-      ),
+      bottomNavigationBar: !Responsive.isDesktop(context)
+          ? BottomNavigationBar(
+              type: BottomNavigationBarType.fixed,
+              backgroundColor: Colors.black,
+              items: _icons
+                  .map((title, icon) => MapEntry(
+                      title,
+                      BottomNavigationBarItem(
+                        icon: Icon(icon, size: 30.0),
+                        title: Text(title),
+                      )))
+                  .values
+                  .toList(),
+              currentIndex: _currentIndex,
+              selectedItemColor: Colors.white,
+              selectedFontSize: 11.0,
+              unselectedItemColor: Colors.grey,
+              unselectedFontSize: 11.0,
+              onTap: (index) => setState(() => _currentIndex = index),
+            )
+          : null,
     );
   }
 }
