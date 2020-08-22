@@ -1,6 +1,6 @@
 # Flutter Netflix Responsive UI Tutorial | Web and Mobile
 
-[YouTube Tutorial](https://youtube.com/MarcusNg)
+[YouTube Tutorial](https://youtu.be/rJKN_880b-M)
 
 ![Web Screenshot](screenshots/web.png)
 
