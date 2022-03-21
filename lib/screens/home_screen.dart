@@ -18,7 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
   void initState() {
     _scrollController = ScrollController()
       ..addListener(() {
-        context.bloc<AppBarCubit>().setOffset(_scrollController.offset);
+        context.read<AppBarCubit>().setOffset(_scrollController.offset);
       });
     super.initState();
   }
@@ -32,15 +32,11 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     final Size screenSize = MediaQuery.of(context).size;
+
     return Scaffold(
       extendBodyBehindAppBar: true,
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.grey[850],
-        child: const Icon(Icons.cast),
-        onPressed: () => print('Cast'),
-      ),
       appBar: PreferredSize(
-        preferredSize: Size(screenSize.width, 50.0),
+        preferredSize: Size(screenSize.width, 40.0),
         child: BlocBuilder<AppBarCubit, double>(
           builder: (context, scrollOffset) {
             return CustomAppBar(scrollOffset: scrollOffset);
@@ -51,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
         controller: _scrollController,
         slivers: [
           SliverToBoxAdapter(
-            child: ContentHeader(featuredContent: sintelContent),
+            child: MovieHeader(featuredContent: sintelMovie),
           ),
           SliverPadding(
             padding: const EdgeInsets.only(top: 20.0),

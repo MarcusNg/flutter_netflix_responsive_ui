@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 
-class Content {
+class Movie {
   final String name;
   final String imageUrl;
   final String titleImageUrl;
@@ -9,7 +9,7 @@ class Content {
   final String description;
   final Color color;
 
-  const Content({
+  const Movie({
     @required this.name,
     @required this.imageUrl,
     this.titleImageUrl,

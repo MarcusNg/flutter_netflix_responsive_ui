@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_netflix_responsive_ui/assets.dart';
 import 'package:flutter_netflix_responsive_ui/models/models.dart';
 
-final Content sintelContent = Content(
+final Movie sintelMovie = Movie(
   name: 'Sintel',
   imageUrl: Assets.sintel,
   titleImageUrl: Assets.sintelTitle,
@@ -11,62 +11,62 @@ final Content sintelContent = Content(
       'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
 );
 
-final List<Content> previews = const [
-  Content(
+final List<Movie> previews = const [
+  Movie(
     name: 'Avatar The Last Airbender',
     imageUrl: Assets.atla,
     color: Colors.orange,
     titleImageUrl: Assets.atlaTitle,
   ),
-  Content(
+  Movie(
     name: 'The Crown',
     imageUrl: Assets.crown,
     color: Colors.red,
     titleImageUrl: Assets.crownTitle,
   ),
-  Content(
+  Movie(
     name: 'The Umbrella Academy',
     imageUrl: Assets.umbrellaAcademy,
     color: Colors.yellow,
     titleImageUrl: Assets.umbrellaAcademyTitle,
   ),
-  Content(
+  Movie(
     name: 'Carole and Tuesday',
     imageUrl: Assets.caroleAndTuesday,
     color: Colors.lightBlueAccent,
     titleImageUrl: Assets.caroleAndTuesdayTitle,
   ),
-  Content(
+  Movie(
     name: 'Black Mirror',
     imageUrl: Assets.blackMirror,
     color: Colors.green,
     titleImageUrl: Assets.blackMirrorTitle,
   ),
-  Content(
+  Movie(
     name: 'Avatar The Last Airbender',
     imageUrl: Assets.atla,
     color: Colors.orange,
     titleImageUrl: Assets.atlaTitle,
   ),
-  Content(
+  Movie(
     name: 'The Crown',
     imageUrl: Assets.crown,
     color: Colors.red,
     titleImageUrl: Assets.crownTitle,
   ),
-  Content(
+  Movie(
     name: 'The Umbrella Academy',
     imageUrl: Assets.umbrellaAcademy,
     color: Colors.yellow,
     titleImageUrl: Assets.umbrellaAcademyTitle,
   ),
-  Content(
+  Movie(
     name: 'Carole and Tuesday',
     imageUrl: Assets.caroleAndTuesday,
     color: Colors.lightBlueAccent,
     titleImageUrl: Assets.caroleAndTuesdayTitle,
   ),
-  Content(
+  Movie(
     name: 'Black Mirror',
     imageUrl: Assets.blackMirror,
     color: Colors.green,
@@ -74,41 +74,41 @@ final List<Content> previews = const [
   ),
 ];
 
-final List<Content> myList = const [
-  Content(name: 'Violet Evergarden', imageUrl: Assets.violetEvergarden),
-  Content(name: 'How to Sell Drugs Online (Fast)', imageUrl: Assets.htsdof),
-  Content(name: 'Kakegurui', imageUrl: Assets.kakegurui),
-  Content(name: 'Carole and Tuesday', imageUrl: Assets.caroleAndTuesday),
-  Content(name: 'Black Mirror', imageUrl: Assets.blackMirror),
-  Content(name: 'Violet Evergarden', imageUrl: Assets.violetEvergarden),
-  Content(name: 'How to Sell Drugs Online (Fast)', imageUrl: Assets.htsdof),
-  Content(name: 'Kakegurui', imageUrl: Assets.kakegurui),
-  Content(name: 'Carole and Tuesday', imageUrl: Assets.caroleAndTuesday),
-  Content(name: 'Black Mirror', imageUrl: Assets.blackMirror),
+final List<Movie> myList = const [
+  Movie(name: 'Violet Evergarden', imageUrl: Assets.violetEvergarden),
+  Movie(name: 'How to Sell Drugs Online (Fast)', imageUrl: Assets.htsdof),
+  Movie(name: 'Kakegurui', imageUrl: Assets.kakegurui),
+  Movie(name: 'Carole and Tuesday', imageUrl: Assets.caroleAndTuesday),
+  Movie(name: 'Black Mirror', imageUrl: Assets.blackMirror),
+  Movie(name: 'Violet Evergarden', imageUrl: Assets.violetEvergarden),
+  Movie(name: 'How to Sell Drugs Online (Fast)', imageUrl: Assets.htsdof),
+  Movie(name: 'Kakegurui', imageUrl: Assets.kakegurui),
+  Movie(name: 'Carole and Tuesday', imageUrl: Assets.caroleAndTuesday),
+  Movie(name: 'Black Mirror', imageUrl: Assets.blackMirror),
 ];
 
-final List<Content> originals = const [
-  Content(name: 'Stranger Things', imageUrl: Assets.strangerThings),
-  Content(name: 'The Witcher', imageUrl: Assets.witcher),
-  Content(name: 'The Umbrella Academy', imageUrl: Assets.umbrellaAcademy),
-  Content(name: '13 Reasons Why', imageUrl: Assets.thirteenReasonsWhy),
-  Content(name: 'The End of the F***ing World', imageUrl: Assets.teotfw),
-  Content(name: 'Stranger Things', imageUrl: Assets.strangerThings),
-  Content(name: 'The Witcher', imageUrl: Assets.witcher),
-  Content(name: 'The Umbrella Academy', imageUrl: Assets.umbrellaAcademy),
-  Content(name: '13 Reasons Why', imageUrl: Assets.thirteenReasonsWhy),
-  Content(name: 'The End of the F***ing World', imageUrl: Assets.teotfw),
+final List<Movie> originals = const [
+  Movie(name: 'Stranger Things', imageUrl: Assets.strangerThings),
+  Movie(name: 'The Witcher', imageUrl: Assets.witcher),
+  Movie(name: 'The Umbrella Academy', imageUrl: Assets.umbrellaAcademy),
+  Movie(name: '13 Reasons Why', imageUrl: Assets.thirteenReasonsWhy),
+  Movie(name: 'The End of the F***ing World', imageUrl: Assets.teotfw),
+  Movie(name: 'Stranger Things', imageUrl: Assets.strangerThings),
+  Movie(name: 'The Witcher', imageUrl: Assets.witcher),
+  Movie(name: 'The Umbrella Academy', imageUrl: Assets.umbrellaAcademy),
+  Movie(name: '13 Reasons Why', imageUrl: Assets.thirteenReasonsWhy),
+  Movie(name: 'The End of the F***ing World', imageUrl: Assets.teotfw),
 ];
 
-final List<Content> trending = const [
-  Content(name: 'Explained', imageUrl: Assets.explained),
-  Content(name: 'Avatar The Last Airbender', imageUrl: Assets.atla),
-  Content(name: 'Tiger King', imageUrl: Assets.tigerKing),
-  Content(name: 'The Crown', imageUrl: Assets.crown),
-  Content(name: 'Dogs', imageUrl: Assets.dogs),
-  Content(name: 'Explained', imageUrl: Assets.explained),
-  Content(name: 'Avatar The Last Airbender', imageUrl: Assets.atla),
-  Content(name: 'Tiger King', imageUrl: Assets.tigerKing),
-  Content(name: 'The Crown', imageUrl: Assets.crown),
-  Content(name: 'Dogs', imageUrl: Assets.dogs),
+final List<Movie> trending = const [
+  Movie(name: 'Explained', imageUrl: Assets.explained),
+  Movie(name: 'Avatar The Last Airbender', imageUrl: Assets.atla),
+  Movie(name: 'Tiger King', imageUrl: Assets.tigerKing),
+  Movie(name: 'The Crown', imageUrl: Assets.crown),
+  Movie(name: 'Dogs', imageUrl: Assets.dogs),
+  Movie(name: 'Explained', imageUrl: Assets.explained),
+  Movie(name: 'Avatar The Last Airbender', imageUrl: Assets.atla),
+  Movie(name: 'Tiger King', imageUrl: Assets.tigerKing),
+  Movie(name: 'The Crown', imageUrl: Assets.crown),
+  Movie(name: 'Dogs', imageUrl: Assets.dogs),
 ];

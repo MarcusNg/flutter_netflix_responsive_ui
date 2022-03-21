@@ -4,7 +4,7 @@ import 'package:flutter_netflix_responsive_ui/models/models.dart';
 
 class ContentList extends StatelessWidget {
   final String title;
-  final List<Content> contentList;
+  final List<Movie> contentList;
   final bool isOriginals;
 
   const ContentList({
@@ -42,7 +42,7 @@ class ContentList extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               itemCount: contentList.length,
               itemBuilder: (BuildContext context, int index) {
-                final Content content = contentList[index];
+                final Movie content = contentList[index];
                 return GestureDetector(
                   onTap: () => print(content.name),
                   child: Container(

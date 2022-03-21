@@ -44,7 +44,7 @@ class _NavScreenState extends State<NavScreen> {
                       title,
                       BottomNavigationBarItem(
                         icon: Icon(icon, size: 30.0),
-                        title: Text(title),
+                        label: "label",
                       )))
                   .values
                   .toList(),
