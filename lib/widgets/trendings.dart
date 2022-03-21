@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_netflix_responsive_ui/models/models.dart';
 
-class Previews extends StatelessWidget {
+class Trendings extends StatelessWidget {
   final String title;
   final List<Movie> contentList;
 
-  const Previews({
+  const Trendings({
     Key key,
     @required this.title,
     @required this.contentList,
@@ -29,11 +29,11 @@ class Previews extends StatelessWidget {
           ),
         ),
         Container(
-          height: 165.0,
+          height: 145.0,
           child: ListView.builder(
             padding: const EdgeInsets.symmetric(
-              vertical: 12.0,
-              horizontal: 8.0,
+              vertical: 10.0,
+              horizontal: 10.0,
             ),
             scrollDirection: Axis.horizontal,
             itemCount: contentList.length,
@@ -45,34 +45,34 @@ class Previews extends StatelessWidget {
                   alignment: Alignment.center,
                   children: [
                     Container(
-                      margin: const EdgeInsets.symmetric(horizontal: 16.0),
-                      height: 130.0,
-                      width: 130.0,
+                      margin: const EdgeInsets.symmetric(horizontal: 14.0),
+                      height: 100.0,
+                      width: 100.0,
                       decoration: BoxDecoration(
                         image: DecorationImage(
                           image: AssetImage(content.imageUrl),
                           fit: BoxFit.cover,
                         ),
                         shape: BoxShape.circle,
-                        border: Border.all(color: content.color, width: 4.0),
+                        border: Border.all(color: content.color, width: 3.0),
                       ),
                     ),
                     Container(
-                      height: 130.0,
-                      width: 130.0,
+                      height: 100.0,
+                      width: 100.0,
                       decoration: BoxDecoration(
                         gradient: const LinearGradient(
                           colors: [
-                            Colors.black87,
-                            Colors.black45,
+                            Colors.black,
+                            Colors.black54,
                             Colors.transparent,
                           ],
-                          stops: [0, 0.25, 1],
+                          stops: [0, 0.35, 1],
                           begin: Alignment.bottomCenter,
                           end: Alignment.topCenter,
                         ),
                         shape: BoxShape.circle,
-                        border: Border.all(color: content.color, width: 4.0),
+                        border: Border.all(color: content.color, width: 3.0),
                       ),
                     ),
                     Positioned(
@@ -80,7 +80,7 @@ class Previews extends StatelessWidget {
                       right: 0,
                       bottom: 0,
                       child: SizedBox(
-                        height: 60.0,
+                        height: 40.0,
                         child: Image.asset(content.titleImageUrl),
                       ),
                     ),

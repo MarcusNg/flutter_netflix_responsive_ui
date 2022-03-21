@@ -50,19 +50,19 @@ class _HomeScreenState extends State<HomeScreen> {
             child: MovieHeader(featuredContent: sintelMovie),
           ),
           SliverPadding(
-            padding: const EdgeInsets.only(top: 20.0),
+            padding: const EdgeInsets.only(top: 15.0),
             sliver: SliverToBoxAdapter(
-              child: Previews(
-                key: PageStorageKey('previews'),
-                title: 'Previews',
-                contentList: previews,
+              child: Trendings(
+                key: PageStorageKey('trendings'),
+                title: 'Trendings',
+                contentList: trendings,
               ),
             ),
           ),
           SliverToBoxAdapter(
             child: ContentList(
-              key: PageStorageKey('myList'),
-              title: 'My List',
+              key: PageStorageKey('myFavourites'),
+              title: 'My Favourites',
               contentList: myList,
             ),
           ),
@@ -71,7 +71,6 @@ class _HomeScreenState extends State<HomeScreen> {
               key: PageStorageKey('originals'),
               title: 'Netflix Originals',
               contentList: originals,
-              isOriginals: true,
             ),
           ),
           SliverPadding(

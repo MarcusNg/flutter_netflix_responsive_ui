@@ -11,7 +11,7 @@ final Movie sintelMovie = Movie(
       'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
 );
 
-final List<Movie> previews = const [
+final List<Movie> trendings = const [
   Movie(
     name: 'Avatar The Last Airbender',
     imageUrl: Assets.atla,

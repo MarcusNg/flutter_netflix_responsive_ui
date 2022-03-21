@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_netflix_responsive_ui/assets.dart';
-import 'package:flutter_netflix_responsive_ui/widgets/widgets.dart';
 
 class CustomAppBar extends StatelessWidget {
   final double scrollOffset;
@@ -20,41 +19,32 @@ class CustomAppBar extends StatelessWidget {
       ),
       color:
           Colors.black.withOpacity((scrollOffset / 300).clamp(0, 1).toDouble()),
-      child: Responsive(
-        mobile: _CustomAppBarMobile(),
-      ),
-    );
-  }
-}
-
-class _CustomAppBarMobile extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return SafeArea(
-      child: Row(
-        children: [
-          Image.asset(Assets.netflixLogo0),
-          const SizedBox(width: 12.0),
-          Expanded(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                _MainAppBarButton(
-                  title: 'TV Shows',
-                  onTap: () => print('TV Shows'),
-                ),
-                _MainAppBarButton(
-                  title: 'Movies',
-                  onTap: () => print('Movies'),
-                ),
-                _MainAppBarButton(
-                  title: 'My List',
-                  onTap: () => print('My List'),
-                ),
-              ],
+      child: SafeArea(
+        child: Row(
+          children: [
+            Image.asset(Assets.netflixLogo0),
+            const SizedBox(width: 12.0),
+            Expanded(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  _MainAppBarButton(
+                    title: 'TV Shows',
+                    onTap: () => print('TV Shows'),
+                  ),
+                  _MainAppBarButton(
+                    title: 'Movies',
+                    onTap: () => print('Movies'),
+                  ),
+                  _MainAppBarButton(
+                    title: 'My List',
+                    onTap: () => print('My List'),
+                  ),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

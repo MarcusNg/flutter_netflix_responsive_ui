@@ -35,8 +35,7 @@ class _NavScreenState extends State<NavScreen> {
         create: (_) => AppBarCubit(),
         child: _screens[_currentIndex],
       ),
-      bottomNavigationBar: !Responsive.isDesktop(context)
-          ? BottomNavigationBar(
+      bottomNavigationBar: BottomNavigationBar(
               type: BottomNavigationBarType.fixed,
               backgroundColor: Colors.black,
               items: _icons
@@ -44,7 +43,7 @@ class _NavScreenState extends State<NavScreen> {
                       title,
                       BottomNavigationBarItem(
                         icon: Icon(icon, size: 30.0),
-                        label: "label",
+                        label: title,
                       )))
                   .values
                   .toList(),
@@ -54,8 +53,7 @@ class _NavScreenState extends State<NavScreen> {
               unselectedItemColor: Colors.grey,
               unselectedFontSize: 11.0,
               onTap: (index) => setState(() => _currentIndex = index),
-            )
-          : null,
+            ),
     );
   }
 }
