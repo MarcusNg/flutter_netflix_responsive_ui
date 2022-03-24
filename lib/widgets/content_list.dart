@@ -7,9 +7,9 @@ class ContentList extends StatelessWidget {
   final List<Movie> contentList;
 
   const ContentList({
-    Key key,
-    @required this.title,
-    @required this.contentList,
+    Key? key,
+    required this.title,
+    required this.contentList,
   }) : super(key: key);
 
   @override

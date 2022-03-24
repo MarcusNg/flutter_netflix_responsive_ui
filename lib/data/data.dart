@@ -7,11 +7,12 @@ final Movie sintelMovie = Movie(
   imageUrl: Assets.sintel,
   titleImageUrl: Assets.sintelTitle,
   videoUrl: Assets.sintelVideoUrl,
+  color: Colors.black,
   description:
       'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
 );
 
-final List<Movie> trendings = const [
+final List<Movie> trendings = [
   Movie(
     name: 'Avatar The Last Airbender',
     imageUrl: Assets.atla,
@@ -74,41 +75,41 @@ final List<Movie> trendings = const [
   ),
 ];
 
-final List<Movie> myList = const [
-  Movie(name: 'Violet Evergarden', imageUrl: Assets.violetEvergarden),
-  Movie(name: 'How to Sell Drugs Online (Fast)', imageUrl: Assets.htsdof),
-  Movie(name: 'Kakegurui', imageUrl: Assets.kakegurui),
-  Movie(name: 'Carole and Tuesday', imageUrl: Assets.caroleAndTuesday),
-  Movie(name: 'Black Mirror', imageUrl: Assets.blackMirror),
-  Movie(name: 'Violet Evergarden', imageUrl: Assets.violetEvergarden),
-  Movie(name: 'How to Sell Drugs Online (Fast)', imageUrl: Assets.htsdof),
-  Movie(name: 'Kakegurui', imageUrl: Assets.kakegurui),
-  Movie(name: 'Carole and Tuesday', imageUrl: Assets.caroleAndTuesday),
-  Movie(name: 'Black Mirror', imageUrl: Assets.blackMirror),
+final List<Movie> myList = [
+  Movie(name: 'Violet Evergarden', imageUrl: Assets.violetEvergarden, titleImageUrl: ''),
+  Movie(name: 'How to Sell Drugs Online (Fast)', imageUrl: Assets.htsdof, titleImageUrl: ''),
+  Movie(name: 'Kakegurui', imageUrl: Assets.kakegurui, titleImageUrl: ''),
+  Movie(name: 'Carole and Tuesday', imageUrl: Assets.caroleAndTuesday, titleImageUrl: ''),
+  Movie(name: 'Black Mirror', imageUrl: Assets.blackMirror, titleImageUrl: ''),
+  Movie(name: 'Violet Evergarden', imageUrl: Assets.violetEvergarden, titleImageUrl: ''),
+  Movie(name: 'How to Sell Drugs Online (Fast)', imageUrl: Assets.htsdof, titleImageUrl: ''),
+  Movie(name: 'Kakegurui', imageUrl: Assets.kakegurui, titleImageUrl: ''),
+  Movie(name: 'Carole and Tuesday', imageUrl: Assets.caroleAndTuesday, titleImageUrl: ''),
+  Movie(name: 'Black Mirror', imageUrl: Assets.blackMirror, titleImageUrl: ''),
 ];
 
-final List<Movie> originals = const [
-  Movie(name: 'Stranger Things', imageUrl: Assets.strangerThings),
-  Movie(name: 'The Witcher', imageUrl: Assets.witcher),
-  Movie(name: 'The Umbrella Academy', imageUrl: Assets.umbrellaAcademy),
-  Movie(name: '13 Reasons Why', imageUrl: Assets.thirteenReasonsWhy),
-  Movie(name: 'The End of the F***ing World', imageUrl: Assets.teotfw),
-  Movie(name: 'Stranger Things', imageUrl: Assets.strangerThings),
-  Movie(name: 'The Witcher', imageUrl: Assets.witcher),
-  Movie(name: 'The Umbrella Academy', imageUrl: Assets.umbrellaAcademy),
-  Movie(name: '13 Reasons Why', imageUrl: Assets.thirteenReasonsWhy),
-  Movie(name: 'The End of the F***ing World', imageUrl: Assets.teotfw),
+final List<Movie> originals = [
+  Movie(name: 'Stranger Things', imageUrl: Assets.strangerThings, titleImageUrl: ''),
+  Movie(name: 'The Witcher', imageUrl: Assets.witcher, titleImageUrl: ''),
+  Movie(name: 'The Umbrella Academy', imageUrl: Assets.umbrellaAcademy, titleImageUrl: ''),
+  Movie(name: '13 Reasons Why', imageUrl: Assets.thirteenReasonsWhy, titleImageUrl: ''),
+  Movie(name: 'The End of the F***ing World', imageUrl: Assets.teotfw, titleImageUrl: ''),
+  Movie(name: 'Stranger Things', imageUrl: Assets.strangerThings, titleImageUrl: ''),
+  Movie(name: 'The Witcher', imageUrl: Assets.witcher, titleImageUrl: ''),
+  Movie(name: 'The Umbrella Academy', imageUrl: Assets.umbrellaAcademy, titleImageUrl: ''),
+  Movie(name: '13 Reasons Why', imageUrl: Assets.thirteenReasonsWhy, titleImageUrl: ''),
+  Movie(name: 'The End of the F***ing World', imageUrl: Assets.teotfw, titleImageUrl: ''),
 ];
 
-final List<Movie> trending = const [
-  Movie(name: 'Explained', imageUrl: Assets.explained),
-  Movie(name: 'Avatar The Last Airbender', imageUrl: Assets.atla),
-  Movie(name: 'Tiger King', imageUrl: Assets.tigerKing),
-  Movie(name: 'The Crown', imageUrl: Assets.crown),
-  Movie(name: 'Dogs', imageUrl: Assets.dogs),
-  Movie(name: 'Explained', imageUrl: Assets.explained),
-  Movie(name: 'Avatar The Last Airbender', imageUrl: Assets.atla),
-  Movie(name: 'Tiger King', imageUrl: Assets.tigerKing),
-  Movie(name: 'The Crown', imageUrl: Assets.crown),
-  Movie(name: 'Dogs', imageUrl: Assets.dogs),
+final List<Movie> trending = [
+  Movie(name: 'Explained', imageUrl: Assets.explained, titleImageUrl: ''),
+  Movie(name: 'Avatar The Last Airbender', imageUrl: Assets.atla, titleImageUrl: ''),
+  Movie(name: 'Tiger King', imageUrl: Assets.tigerKing, titleImageUrl: ''),
+  Movie(name: 'The Crown', imageUrl: Assets.crown, titleImageUrl: ''),
+  Movie(name: 'Dogs', imageUrl: Assets.dogs, titleImageUrl: ''),
+  Movie(name: 'Explained', imageUrl: Assets.explained, titleImageUrl: ''),
+  Movie(name: 'Avatar The Last Airbender', imageUrl: Assets.atla, titleImageUrl: ''),
+  Movie(name: 'Tiger King', imageUrl: Assets.tigerKing, titleImageUrl: ''),
+  Movie(name: 'The Crown', imageUrl: Assets.crown, titleImageUrl: ''),
+  Movie(name: 'Dogs', imageUrl: Assets.dogs, titleImageUrl: ''),
 ];

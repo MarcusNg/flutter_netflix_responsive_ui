@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 import 'package:flutter_netflix_responsive_ui/assets.dart';
@@ -6,7 +8,7 @@ class CustomAppBar extends StatelessWidget {
   final double scrollOffset;
 
   const CustomAppBar({
-    Key key,
+    Key? key,
     this.scrollOffset = 0.0,
   }) : super(key: key);
 
@@ -52,12 +54,12 @@ class CustomAppBar extends StatelessWidget {
 
 class _MainAppBarButton extends StatelessWidget {
   final String title;
-  final Function onTap;
+  final VoidCallback onTap;
 
   const _MainAppBarButton({
-    Key key,
-    @required this.title,
-    @required this.onTap,
+    Key? key,
+    required this.title,
+    required this.onTap,
   }) : super(key: key);
 
   @override

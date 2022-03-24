@@ -7,9 +7,9 @@ class Trendings extends StatelessWidget {
   final List<Movie> contentList;
 
   const Trendings({
-    Key key,
-    @required this.title,
-    @required this.contentList,
+    Key? key,
+    required this.title,
+    required this.contentList,
   }) : super(key: key);
 
   @override
@@ -54,7 +54,7 @@ class Trendings extends StatelessWidget {
                           fit: BoxFit.cover,
                         ),
                         shape: BoxShape.circle,
-                        border: Border.all(color: content.color, width: 3.0),
+                        border: Border.all(color: content.color!, width: 3.0),
                       ),
                     ),
                     Container(
@@ -72,7 +72,7 @@ class Trendings extends StatelessWidget {
                           end: Alignment.topCenter,
                         ),
                         shape: BoxShape.circle,
-                        border: Border.all(color: content.color, width: 3.0),
+                        border: Border.all(color: content.color!, width: 3.0),
                       ),
                     ),
                     Positioned(

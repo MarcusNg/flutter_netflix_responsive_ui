@@ -7,8 +7,8 @@ class MovieHeader extends StatelessWidget {
   final Movie featuredContent;
 
   const MovieHeader({
-    Key key,
-    @required this.featuredContent,
+    Key? key,
+    required this.featuredContent,
   }) : super(key: key);
 
   @override
