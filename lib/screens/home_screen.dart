@@ -5,20 +5,20 @@ import 'package:flutter_netflix_responsive_ui/data/data.dart';
 import 'package:flutter_netflix_responsive_ui/widgets/widgets.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key key}) : super(key: key);
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  ScrollController _scrollController;
+  late ScrollController _scrollController;
 
   @override
   void initState() {
     _scrollController = ScrollController()
       ..addListener(() {
-        context.bloc<AppBarCubit>().setOffset(_scrollController.offset);
+        context.read<AppBarCubit>().setOffset(_scrollController.offset);
       });
     super.initState();
   }
@@ -87,7 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 contentList: trending,
               ),
             ),
-          )
+          ),
         ],
       ),
     );

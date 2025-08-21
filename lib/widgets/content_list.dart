@@ -8,9 +8,9 @@ class ContentList extends StatelessWidget {
   final bool isOriginals;
 
   const ContentList({
-    Key key,
-    @required this.title,
-    @required this.contentList,
+    Key? key,
+    required this.title,
+    required this.contentList,
     this.isOriginals = false,
   }) : super(key: key);
 

@@ -40,12 +40,15 @@ class _NavScreenState extends State<NavScreen> {
               type: BottomNavigationBarType.fixed,
               backgroundColor: Colors.black,
               items: _icons
-                  .map((title, icon) => MapEntry(
+                  .map(
+                    (title, icon) => MapEntry(
                       title,
                       BottomNavigationBarItem(
                         icon: Icon(icon, size: 30.0),
-                        title: Text(title),
-                      )))
+                        label: title,
+                      ),
+                    ),
+                  )
                   .values
                   .toList(),
               currentIndex: _currentIndex,

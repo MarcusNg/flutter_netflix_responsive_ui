@@ -6,11 +6,8 @@ class Previews extends StatelessWidget {
   final String title;
   final List<Content> contentList;
 
-  const Previews({
-    Key key,
-    @required this.title,
-    @required this.contentList,
-  }) : super(key: key);
+  const Previews({Key? key, required this.title, required this.contentList})
+    : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +51,7 @@ class Previews extends StatelessWidget {
                           fit: BoxFit.cover,
                         ),
                         shape: BoxShape.circle,
-                        border: Border.all(color: content.color, width: 4.0),
+                        border: Border.all(color: content.color!, width: 4.0),
                       ),
                     ),
                     Container(
@@ -72,7 +69,7 @@ class Previews extends StatelessWidget {
                           end: Alignment.topCenter,
                         ),
                         shape: BoxShape.circle,
-                        border: Border.all(color: content.color, width: 4.0),
+                        border: Border.all(color: content.color!, width: 4.0),
                       ),
                     ),
                     Positioned(
@@ -81,7 +78,7 @@ class Previews extends StatelessWidget {
                       bottom: 0,
                       child: SizedBox(
                         height: 60.0,
-                        child: Image.asset(content.titleImageUrl),
+                        child: Image.asset(content.titleImageUrl!),
                       ),
                     ),
                   ],
